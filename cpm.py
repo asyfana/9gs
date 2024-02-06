@@ -60,5 +60,5 @@ elif (choose == "OS data"):
     df6 = pd.read_csv("Resistance1.csv")
 
 
-    filtered_Resistance = df6.loc[(df4['Frequency'] >= freq_slider_start) & (df6['Frequency'] <= freq_slider_end)]
+    filtered_Resistance = df6.loc[(df6['Frequency'] >= freq_slider_start) & (df6['Frequency'] <= freq_slider_end)]
     st.line_chart(filtered_Resistance, x="Frequency", use_container_width=True)
