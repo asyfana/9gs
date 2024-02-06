@@ -24,13 +24,14 @@ elif (choose == "OS data"):
     st.title("OS data")
 
     form = st.form("side_form")
-    choose = form.radio("What OS data according to Capacitance, Resistance and Inductance",["Capacitance","Resistance","Inductance"], index=None)
-    formside.form_submit_button("Submit")
+    data_type = form.radio("Select data type", ["Capacitance", "Resistance", "Inductance"])
+    form.form_submit_button("Submit")
 
-    if (choose == "Capacitance"):
-        st.header("capacitance")
-        df = pd.read_csv("Capacitance Data.csv")
+    if data_type == "Capacitance":
+        st.header("Capacitance data")
+        df = pd.read_csv("Capacitance_Data.csv")
         st.dataframe(df)
+   
         #permittivity = pd.read_csv("Permittivity.csv")
         df2 = pd.read_csv("Capacitance1.csv")
         #st.dataframe(df2)
