@@ -23,8 +23,8 @@ if (choose == "CPM"):
 elif (choose == "OS data"):
     st.title("OS data")
 
-    formside = st.sidebar.form("side_form")
-    choose = formside.radio("What OS data according to Capacitance, Resistance and Inductance",["Capacitance","Resistance","Inductance"], index=None)
+    form = st.form("side_form")
+    choose = form.radio("What OS data according to Capacitance, Resistance and Inductance",["Capacitance","Resistance","Inductance"], index=None)
     formside.form_submit_button("Submit")
 
     if (choose == "Capacitance"):
