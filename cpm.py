@@ -19,7 +19,7 @@ if (choose == "CPM"):
     st.image('cpm.png', caption='CPM')
 
 elif (choose == "OS data"):
-    st.title("OS data
+    st.title("OS data")
     st.header("capacitance")
 
     df = pd.read_csv(r"Capacitance Data")
