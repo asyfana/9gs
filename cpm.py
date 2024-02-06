@@ -29,6 +29,7 @@ elif (choose == "OS data"):
 
     #permittivity = pd.read_csv("Permittivity.csv")
     df2 = pd.read_csv("Capacitance.csv")
+    st.dataframe(df2)
     
     # Rename the columns
     new_column_names = {
