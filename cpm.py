@@ -47,4 +47,5 @@ elif (choose == "OS data"):
     df4 = pd.read_csv("Inductance1.csv")
     #st.dataframe(df2)
 
-    filtered_capacitance = df4.loc[(df4['Frequency'] >= freq_slider_start) & (df4['Frequency'] <= freq_slider_end)]
+    filtered_Inductance = df4.loc[(df4['Frequency'] >= freq_slider_start) & (df4['Frequency'] <= freq_slider_end)]
+    st.line_chart(filtered_Inductance, x="Frequency", use_container_width=True)
