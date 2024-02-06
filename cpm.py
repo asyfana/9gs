@@ -22,35 +22,23 @@ if (choose == "CPM"):
 
 elif (choose == "OS data"):
     st.title("OS data")
-    st.header("capacitance")
 
-    df = pd.read_csv("Capacitance Data.csv")
-    st.dataframe(df)
+    formside = st.sidebar.form("side_form")
+    choose = formside.radio("What OS data according to Capacitance, Resistance and Inductance",["Capacitance","Resistance","Inductance"], index=None)
+    formside.form_submit_button("Submit")
 
-    #permittivity = pd.read_csv("Permittivity.csv")
-    df2 = pd.read_csv("Capacitance1.csv")
-    #st.dataframe(df2)
-    
-    # Rename the columns
-    # new_column_names = {
-    #     "G0": "GB4",
-    #     "G1": "OS23-0002",
-    #     "G2": "OS23-0003",
-    #     "G3": "OS23-0004",
-    #     "G4": "OS23-0005-110",
-    #     "G5": "OS23-0005-110 (S)",
-    #     "G6": "OS23-0005-120",
-    #     "G7": "OS23-0005-120(S)",
-    #     "G8": "OS24-0005-020",
-    #     "G9": "OS24-0005-040",
-    #     "G10": "OS24-0005-050",
-    #     "G11": "OS24-0005-060",
-    # }
-    
-    freq_slider_start = st.slider("Slider for Start Frequency", 50, 100000, 50)
-    freq_slider_end = st.slider("Slider for End Frequency", freq_slider_start, 100000, 100000)
-    filtered_capacitance = df2.loc[(df2['Frequency'] >= freq_slider_start) & (df2['Frequency'] <= freq_slider_end)]
-    
-    st.header("Capacitance(Cp)")
-    st.line_chart(filtered_capacitance, x="Frequency", use_container_width=True)
+    if (choose == "Capacitance"):
+        st.header("capacitance")
+            df = pd.read_csv("Capacitance Data.csv")
+            st.dataframe(df)
+            #permittivity = pd.read_csv("Permittivity.csv")
+            df2 = pd.read_csv("Capacitance1.csv")
+            #st.dataframe(df2)
+
+            freq_slider_start = st.slider("Slider for Start Frequency", 50, 100000, 50)
+            freq_slider_end = st.slider("Slider for End Frequency", freq_slider_start, 100000, 100000)
+            filtered_capacitance = df2.loc[(df2['Frequency'] >= freq_slider_start) & (df2['Frequency'] <= freq_slider_end)]
+            
+            st.header("Capacitance(Cp)")
+            st.line_chart(filtered_capacitance, x="Frequency", use_container_width=True)
     
