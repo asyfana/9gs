@@ -22,6 +22,6 @@ elif (choose == "OS data"):
     st.title("OS data")
     st.header("capacitance")
 
-    df = pd.read_csv(r"Capacitance Data")
+    df = pd.read_csv("Capacitance Data")
     st.dataframe(df)
     
