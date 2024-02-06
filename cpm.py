@@ -40,9 +40,11 @@ elif (choose == "OS data"):
 
 
     st.header("Inductance data")
-    df = pd.read_csv("Capacitance Data.csv")
+    df3 = pd.read_csv("Inductance Data.csv")
     st.dataframe(df)
    
     #permittivity = pd.read_csv("Permittivity.csv")
-    df2 = pd.read_csv("Capacitance1.csv")
+    df4 = pd.read_csv("Inductance1.csv")
     #st.dataframe(df2)
+
+    filtered_capacitance = df4.loc[(df4['Frequency'] >= freq_slider_start) & (df4['Frequency'] <= freq_slider_end)]
