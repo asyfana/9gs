@@ -8,10 +8,6 @@ import sys
 
 warnings.filterwarnings("ignore")
 
-st.title("OS data and CPM")
-
-
-st.image('cpm.png', caption='CPM')
 
 st.sidebar.title("Main Menu")
 formside = st.sidebar.form("side_form")
