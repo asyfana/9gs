@@ -32,21 +32,21 @@ elif (choose == "OS data"):
     st.dataframe(df2)
     
     # Rename the columns
-    new_column_names = {
-        "G0": "GB4",
-        "G1": "OS23-0002",
-        "G2": "OS23-0003",
-        "G3": "OS23-0004",
-        "G4": "OS23-0005-110",
-        "G5": "OS23-0005-110 (S)",
-        "G6": "OS23-0005-120",
-        "G7": "OS23-0005-120(S)",
-        "G8": "OS24-0005-020",
-        "G9": "OS24-0005-040",
-        "G10": "OS24-0005-050",
-        "G11": "OS24-0005-060",
-    }
+    # new_column_names = {
+    #     "G0": "GB4",
+    #     "G1": "OS23-0002",
+    #     "G2": "OS23-0003",
+    #     "G3": "OS23-0004",
+    #     "G4": "OS23-0005-110",
+    #     "G5": "OS23-0005-110 (S)",
+    #     "G6": "OS23-0005-120",
+    #     "G7": "OS23-0005-120(S)",
+    #     "G8": "OS24-0005-020",
+    #     "G9": "OS24-0005-040",
+    #     "G10": "OS24-0005-050",
+    #     "G11": "OS24-0005-060",
+    # }
 
     st.header("Capacitance(Cp)")
-    st.line_chart(df2, x="Frequency", y=list(new_column_names.values()), use_container_width=True)
+    st.line_chart(df2, x="Frequency", use_container_width=True)
     
