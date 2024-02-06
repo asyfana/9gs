@@ -35,6 +35,14 @@ elif (choose == "OS data"):
     freq_slider_end = st.slider("Slider for End Frequency", freq_slider_start, 100000, 100000)
     filtered_capacitance = df2.loc[(df2['Frequency'] >= freq_slider_start) & (df2['Frequency'] <= freq_slider_end)]
             
-    st.header("Capacitance(Cp)")
+    #st.header("Capacitance(Cp)")
     st.line_chart(filtered_capacitance, x="Frequency", use_container_width=True)
-    
+
+
+    st.header("Inductance data")
+    df = pd.read_csv("Capacitance Data.csv")
+    st.dataframe(df)
+   
+    #permittivity = pd.read_csv("Permittivity.csv")
+    df2 = pd.read_csv("Capacitance1.csv")
+    #st.dataframe(df2)
