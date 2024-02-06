@@ -28,7 +28,7 @@ elif (choose == "OS data"):
     st.dataframe(df)
 
     #permittivity = pd.read_csv("Permittivity.csv")
-    Capacitance = pd.read_csv("Capacitance.csv")
+    df2 = pd.read_csv("Capacitance.csv")
     
     # Rename the columns
     new_column_names = {
@@ -47,5 +47,5 @@ elif (choose == "OS data"):
     }
 
     st.header("Capacitance(Cp)")
-    st.line_chart(Capacitance, x="Frequency", y=list(new_column_names.values()), use_container_width=True)
+    st.line_chart(df2, x="Frequency", y=list(new_column_names.values()), use_container_width=True)
     
