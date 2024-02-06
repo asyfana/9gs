@@ -47,5 +47,5 @@ elif (choose == "OS data"):
     }
 
     st.header("Capacitance(Cp)")
-    st.line_chart(filtered_capacitance, x="Frequency", y=list(new_column_names.values()), use_container_width=True)
+    st.line_chart(Capacitance, x="Frequency", y=list(new_column_names.values()), use_container_width=True)
     
