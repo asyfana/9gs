@@ -41,7 +41,7 @@ elif (choose == "OS data"):
 
     st.header("Inductance data")
     df3 = pd.read_csv("Inductance Data.csv")
-    st.dataframe(df)
+    st.dataframe(df3)
    
     #permittivity = pd.read_csv("Permittivity.csv")
     df4 = pd.read_csv("Inductance1.csv")
@@ -49,3 +49,16 @@ elif (choose == "OS data"):
 
     filtered_Inductance = df4.loc[(df4['Frequency'] >= freq_slider_start) & (df4['Frequency'] <= freq_slider_end)]
     st.line_chart(filtered_Inductance, x="Frequency", use_container_width=True)
+
+
+
+    st.header("Resistance data")
+    df5 = pd.read_csv("Resistance Data.csv")
+    st.dataframe(df5)
+   
+
+    df6 = pd.read_csv("Resistance1.csv")
+
+
+    filtered_Resistance = df6.loc[(df4['Frequency'] >= freq_slider_start) & (df6['Frequency'] <= freq_slider_end)]
+    st.line_chart(filtered_Resistance, x="Frequency", use_container_width=True)
