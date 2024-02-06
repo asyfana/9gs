@@ -28,7 +28,7 @@ elif (choose == "OS data"):
     st.dataframe(df)
 
     #permittivity = pd.read_csv("Permittivity.csv")
-    df2 = pd.read_csv("Capacitance.csv")
+    df2 = pd.read_csv("Capacitance1.csv")
     st.dataframe(df2)
     
     # Rename the columns
