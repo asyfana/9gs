@@ -10,7 +10,7 @@ warnings.filterwarnings("ignore")
 
 
 st.image("9gs.jpg")
-st.write("Please click the arrow '>' on the top left to proceed')
+st.write("Please click the arrow '>' on the top left to proceed")
 
 st.sidebar.image("9gs.jpg")
 st.sidebar.title("Main Menu")
