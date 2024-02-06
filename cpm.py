@@ -12,4 +12,4 @@ warnings.filterwarnings("ignore")
 st.title("OS data and CPM")
 
 
-st.image("C:/Users/Asus/Pictures/cpm.png", caption='CPM')
+st.image('cpm.png', caption='CPM')
