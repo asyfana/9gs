@@ -9,7 +9,9 @@ import sys
 warnings.filterwarnings("ignore")
 
 
+st.sidebar.image("9gs.jpg")
 st.sidebar.title("Main Menu")
+
 formside = st.sidebar.form("side_form")
 choose = formside.radio("Choose which data you want to see",["CPM","OS data"], index=None)
 formside.form_submit_button("Submit")
