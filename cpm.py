@@ -20,7 +20,7 @@ choose = formside.radio("Choose which data you want to see",["CPM","OS data"], i
 formside.form_submit_button("Submit")
 
 if (choose == "CPM"):
-    st.title("OS data and CPM")
+    st.title("CPM")
     st.image('cpm.png', caption='CPM')
 
 elif (choose == "OS data"):
