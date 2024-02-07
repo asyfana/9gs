@@ -27,7 +27,7 @@ if (choose == "CPM"):
 
 
 elif (choose == "OS data"):
-    st.title("OS data")
+    st.title("Operational Slip Data")
 
     # st.header("Capacitance data")
     df = pd.read_csv("Capacitance Data.csv")
