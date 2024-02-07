@@ -82,7 +82,7 @@ elif (choose == "OS data"):
         st.line_chart(filtered_capacitance, x="Frequency", use_container_width=True)
         st.write("capacitance vs frequency whole data")
         st.dataframe(df)
-     with st.expander(label1):
+    with st.expander(label1):
         st.line_chart(filtered_Inductance, x="Frequency", use_container_width=True)
         st.write("Inductance vs frequency whole data")
         st.dataframe(df3)
