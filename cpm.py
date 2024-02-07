@@ -27,7 +27,7 @@ elif (choose == "OS data"):
     st.title("OS data")
 
     # st.header("Capacitance data")
-    # df = pd.read_csv("Capacitance Data.csv")
+    df = pd.read_csv("Capacitance Data.csv")
     # st.dataframe(df)
    
     #permittivity = pd.read_csv("Permittivity.csv")
