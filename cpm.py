@@ -85,7 +85,7 @@ elif (choose == "OS data"):
     with st.expander(label1):
         st.line_chart(filtered_Inductance, x="Frequency", use_container_width=True)
         st.write("Inductance vs frequency whole data")
-        st.dataframe(df3)
+        st.dataframe(df4)
     with st.expander(label2):
         st.line_chart(filtered_Resistance, x="Frequency", use_container_width=True)
         st.write("Resistance vs frequency whole data")
