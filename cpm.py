@@ -70,7 +70,7 @@ elif (choose == "OS data"):
 #..........................................................................................................................................................
 
     filtered_capacitance = df2.loc[(df2['Frequency'] >= freq_slider_start) & (df2['Frequency'] <= freq_slider_end)]
-    label = ":blue[Chart for capacitance] " 
+    label = ":blue[Chart for Capacitance] " 
 
     filtered_Inductance = df4.loc[(df4['Frequency'] >= freq_slider_start) & (df4['Frequency'] <= freq_slider_end)]
     label1 = ":blue[Chart for Inductance] " 
