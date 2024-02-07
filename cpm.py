@@ -75,3 +75,4 @@ elif (choose == "OS data"):
     with st.expander(label):
         st.line_chart(filtered_capacitance, x="Frequency", use_container_width=True)
         st.write("capacitance vs frequency")
+        st.dataframe(df)
