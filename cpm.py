@@ -66,16 +66,13 @@ elif (choose == "OS data"):
     filtered_Resistance = df6.loc[(df6['Frequency'] >= freq_slider_start) & (df6['Frequency'] <= freq_slider_end)]
     st.line_chart(filtered_Resistance, x="Frequency", use_container_width=True)
 
+#..........................................................................................................................................................
 
+    chart_data = (df2.loc[(df2['survived']==svstatus) & (df2['age']>= age)])
+    filtered_capacitance = df2.loc[(df2['Frequency'] >= freq_slider_start) & (df2['Frequency'] <= freq_slider_end)]
+    label = ":blue[Chart for capacitance] " 
 
-    with st.expander(df2):
+    
+    with st.expander(label):
         st.line_chart(filtered_capacitance, x="Frequency", use_container_width=True)
         st.write("capacitance vs frequency")
-    # with col2.expander(label1):
-    #     st.line_chart(chart_data1)
-    #     total1 = chart_data1["survived"].count()
-    #     st.write("Total survived = ", total1)
-    # with col2.expander(label2):
-    #     st.line_chart(chart_data2)
-    #     total2 = chart_data2["survived"].count()
-    #     st.write("Total survived = ", total2)
