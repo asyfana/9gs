@@ -11,7 +11,7 @@ warnings.filterwarnings("ignore")
 
 # st.image("9gs.jpg")
 # st.write("Please click the arrow '>' on the top left to proceed")
-
+st.write("Click > on top left")
 st.sidebar.image("9gs.jpg")
 st.sidebar.title("Main Menu")
 st.sidebar.write('<div style="position: fixed; bottom: 10px; left: 10px; font-size: 10px;">Copyrights to 9GS, developed by AFF </div>', unsafe_allow_html=True)
