@@ -69,7 +69,7 @@ elif (choose == "OS data"):
 
 
     with st.expander(df2):
-        st.line_chart(df2)
+        st.line_chart(filtered_capacitance, x="Frequency", use_container_width=True)
         st.write("capacitance vs frequency")
     # with col2.expander(label1):
     #     st.line_chart(chart_data1)
