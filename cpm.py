@@ -14,6 +14,7 @@ warnings.filterwarnings("ignore")
 
 st.sidebar.image("9gs.jpg")
 st.sidebar.title("Main Menu")
+st.sidebar.write('<div style="position: fixed; bottom: 10px; left: 10px; font-size: 10px;">Small text at bottom left</div>', unsafe_allow_html=True)
 
 formside = st.sidebar.form("side_form")
 choose = formside.radio("Choose which data you want to see",["CPM","OS data"], index=None)
