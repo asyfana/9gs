@@ -43,7 +43,7 @@ elif (choose == "OS data"):
 
 
     # st.header("Inductance data")
-    # df3 = pd.read_csv("Inductance Data.csv")
+    df3 = pd.read_csv("Inductance Data.csv")
     # st.dataframe(df3)
    
     #permittivity = pd.read_csv("Permittivity.csv")
@@ -56,7 +56,7 @@ elif (choose == "OS data"):
 
 
     # st.header("Resistance data")
-    # df5 = pd.read_csv("Resistance Data.csv")
+    df5 = pd.read_csv("Resistance Data.csv")
     # st.dataframe(df5)
    
 
@@ -85,8 +85,8 @@ elif (choose == "OS data"):
     with st.expander(label1):
         st.line_chart(filtered_Inductance, x="Frequency", use_container_width=True)
         st.write("Inductance vs frequency whole data")
-        st.dataframe(df4)
+        st.dataframe(df3)
     with st.expander(label2):
         st.line_chart(filtered_Resistance, x="Frequency", use_container_width=True)
         st.write("Resistance vs frequency whole data")
-        st.dataframe(df6)
+        st.dataframe(df5)
