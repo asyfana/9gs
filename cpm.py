@@ -23,6 +23,7 @@ formside.form_submit_button("Submit")
 if (choose == "CPM"):
     st.title("CPM")
     st.image('cpmnnew.png', caption='CPM')
+    st.image('cpmnew.png', caption='CPM')
 
 elif (choose == "OS data"):
     st.title("OS data")
