@@ -68,7 +68,6 @@ elif (choose == "OS data"):
 
 #..........................................................................................................................................................
 
-    chart_data = (df2.loc[(df2['survived']==svstatus) & (df2['age']>= age)])
     filtered_capacitance = df2.loc[(df2['Frequency'] >= freq_slider_start) & (df2['Frequency'] <= freq_slider_end)]
     label = ":blue[Chart for capacitance] " 
 
