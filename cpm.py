@@ -74,8 +74,8 @@ elif (choose == "OS data"):
     filtered_Inductance = df4.loc[(df4['Frequency'] >= freq_slider_start) & (df4['Frequency'] <= freq_slider_end)]
     label1 = ":blue[Chart for Inductance] " 
 
-    label1 = ":blue[Chart for Resistance] " 
     filtered_Resistance = df6.loc[(df6['Frequency'] >= freq_slider_start) & (df6['Frequency'] <= freq_slider_end)]
+    label2 = ":blue[Chart for Resistance] " 
 
     
     with st.expander(label):
@@ -86,7 +86,7 @@ elif (choose == "OS data"):
         st.line_chart(filtered_Inductance, x="Frequency", use_container_width=True)
         st.write("Inductance vs frequency whole data")
         st.dataframe(df3)
-    with st.expander(label1):
+    with st.expander(label2):
         st.line_chart(filtered_Resistance, x="Frequency", use_container_width=True)
         st.write("Resistance vs frequency whole data")
         st.dataframe(df6)
