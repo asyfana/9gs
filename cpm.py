@@ -80,12 +80,12 @@ elif (choose == "OS data"):
     label2 = ":blue[Chart for Resistance] " 
 
 
-    filtered_cpdata = df1.loc[(df1['Frequency'] >= freq_slider_start) & (df1['Frequency'] <= freq_slider_end)]
+
     
     with st.expander(label):
         st.line_chart(filtered_capacitance, x="Frequency", use_container_width=True)
         st.write("capacitance vs frequency whole data")
-        st.dataframe(filtered_cpdata)
+        st.dataframe(df)
     with st.expander(label1):
         st.line_chart(filtered_Inductance, x="Frequency", use_container_width=True)
         st.write("Inductance vs frequency whole data")
