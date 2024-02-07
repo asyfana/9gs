@@ -14,7 +14,7 @@ warnings.filterwarnings("ignore")
 st.write("Click '>' on top left to see more ")
 st.sidebar.image("9gs.jpg")
 st.sidebar.title("Main Menu")
-st.sidebar.write('<div style="position: fixed; bottom: 10px; left: 10px; font-size: 10px;">Copyright© 9GS, developed by AFF </div>', unsafe_allow_html=True)
+st.sidebar.write('<div style="position: fixed; bottom: 10px; left: 10px; font-size: 10px;">Copyright© 2024 9GS, developed by AFF </div>', unsafe_allow_html=True)
 
 formside = st.sidebar.form("side_form")
 choose = formside.radio("Choose which data you want to see",["CPM","OS data"], index=None)
