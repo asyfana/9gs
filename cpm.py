@@ -38,7 +38,7 @@ elif (choose == "OS data"):
     #st.dataframe(df2)
 
     # freq_slider_start = st.slider("Slider for Start Frequency", 50, 100000, 50)
-    freq_slider_start, freq_slider_end = st.slider("Slider for Start Frequency", 50, 100000, (50, 500))
+    freq_slider_start, freq_slider_end = st.slider("You can drag the slider to the frequency that you want", 50, 100000, (100000, 500))
     # freq_slider_end = st.slider("Slider for End Frequency", freq_slider_start, 100000, 100000)
     
     #filtered_capacitance = df2.loc[(df2['Frequency'] >= freq_slider_start) & (df2['Frequency'] <= freq_slider_end)]
