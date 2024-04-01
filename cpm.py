@@ -12,7 +12,7 @@ warnings.filterwarnings("ignore")
 # st.image("9gs.jpg")
 # st.write("Please click the arrow '>' on the top left to proceed")
 st.write("Click '>' on top left to see more ")
-st.sidebar.image("9gs.jpg")
+st.sidebar.image("SpinEight.png")
 st.sidebar.title("Main Menu")
 st.sidebar.write('<div style="position: fixed; bottom: 10px; left: 10px; font-size: 10px;">Copyright© 2024 9GS, developed by AFF </div>', unsafe_allow_html=True)
 
